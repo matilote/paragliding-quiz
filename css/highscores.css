@@ -1,0 +1,19 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+thead {
+    background-color:rgb(199, 90, 90);
+    color: white;
+    text-align: center;
+    font-weight: 900;
+} 
+
+#highScoresList > * {
+    text-align: center;
+}
+
+#finalScore {
+    font-weight: 900;
+    padding: 2rem;
+}

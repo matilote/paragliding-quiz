@@ -1,0 +1,26 @@
+[
+    {
+      "question": "Pytanie 1",
+      "choice1": "Odpowiedz 1",
+      "choice2": "Odpowiedz 2",
+      "choice3": "Odpowiedz 3",
+      "choice4": "Odpowiedz 4",
+      "answer": 1
+    },
+    {
+      "question": "Pytanie 2",
+      "choice1": "Odpowiedz 1",
+      "choice2": "Odpowiedz 2",
+      "choice3": "Odpowiedz 3",
+      "choice4": "Odpowiedz 4",
+      "answer": 1
+    },
+    {
+      "question": "Pytanie 3",
+      "choice1": "Odpowiedz 1",
+      "choice2": "Odpowiedz 2",
+      "choice3": "Odpowiedz 3",
+      "choice4": "Odpowiedz 4",
+      "answer": 1
+    }
+]
