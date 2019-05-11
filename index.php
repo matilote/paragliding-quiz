@@ -41,7 +41,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <a href="quiz.html">
+            <a href="quiz.php">
               <div class="box-part text-center">
                 <div class="title">
                   <h5>Człowiek, Możliwości, Ograniczenia</h5>

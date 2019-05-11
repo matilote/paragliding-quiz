@@ -1,0 +1,269 @@
+[
+  {
+    "quiz": "human",
+    "title": "Człowiek, Możliwości, Ograniczenia",
+    "questions": [
+     {
+     "id": 1,
+     "question": {
+      "image": "",
+      "content": "Wraz ze wzrostem wysokości ciśnienie: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "rośnie, co wpływa na zaburzenia pracy serca"
+      },
+      {
+       "option": "B",
+       "content": "maleje w następstwie czego mogą wystąpić objawy choroby wysokościowej"
+      },
+      {
+       "option": "C",
+       "content": "jest stałe i nie ma znaczenia dla organizmu pilota"
+      },
+      {
+       "option": "D",
+       "content": "rośnie, ale zmiana jest tak mała, że nie wpływa na pracę organizmu pilota"
+      }
+      ],
+      "correct": "B"
+    },
+    {
+     "id": 2,
+     "question": {
+      "image": "",
+      "content": "Niedotlenienie organizmu podczas wykonywania lotu: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "może wystąpić na skutek przebywania na dużej wysokości"
+      },
+      {
+       "option": "B",
+       "content": "może spowodować zaburzenia pracy błędnika"
+      },
+      {
+       "option": "C",
+       "content": "ma wpływ na bezpieczeństwo wykonywania lotu"
+      },
+      {
+       "option": "D",
+       "content": "wszystkie odpowiedzi są prawdiłowe"
+      }
+      ],
+      "correct": "D"
+    },
+    {
+     "id": 3,
+     "question": {
+      "image": "",
+      "content": "Pilot wykonujący lot na paralotni powinien: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "dopasować swój ubiór do warunków atmosferycznych"
+      },
+      {
+       "option": "B",
+       "content": "zabezpieczyć się przed nadmierną utratą ciepła"
+      },
+      {
+       "option": "C",
+       "content": "korzystać z nieprzewiewnego kombinezonu"
+      },
+      {
+       "option": "D",
+       "content": "wszystkie odpowiedzi są prawdiłowe"
+      }
+      ],
+      "correct": "D"
+    },
+    {
+     "id": 4,
+     "question": {
+      "image": "",
+      "content": "Chwilowe osłabienie słuchu może być skutkiem: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "nagłej zmiany ciśnienia"
+      },
+      {
+       "option": "B",
+       "content": "nagłej zmiany prędkości"
+      },
+      {
+       "option": "C",
+       "content": "zmiany temperatury"
+      },
+      {
+       "option": "D",
+       "content": "wszystkie odpowiedzi są prawdiłowe"
+      }
+      ],
+      "correct": "A"
+    },
+    {
+     "id": 5,
+     "question": {
+      "image": "",
+      "content": "W normalnym stanie atmosfery temperatura powietrza: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "rośnie, co może doprowadzić do przegrzania organizmu"
+      },
+      {
+       "option": "B",
+       "content": "nie zmienia się"
+      },
+      {
+       "option": "C",
+       "content": "maleje od 0,6 do 1 stopnia na każde"
+      },
+      {
+       "option": "D",
+       "content": "początkowo rośnie, poźniej maleje"
+      }
+      ],
+      "correct": "C"
+    },
+    {
+     "id": 6,
+     "question": {
+      "image": "",
+      "content": "Prędkość wiatru i jego kierunek: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "nie ma wpływu na bezpieczeństwo lotu"
+      },
+      {
+       "option": "B",
+       "content": "podczas startu nie ma znaczenia"
+      },
+      {
+       "option": "C",
+       "content": "nie ma wpływu na tworzenie się turbulencji"
+      },
+      {
+       "option": "D",
+       "content": "wszystkie odpowiedzi są fałszywe"
+      }
+      ],
+      "correct": "D"
+    },
+    {
+     "id": 7,
+     "question": {
+      "image": "",
+      "content": "Spożywanie alkoholu przed lub w trakcie lotu: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "jest łamaniem prawa lotniczego"
+      },
+      {
+       "option": "B",
+       "content": "powoduje pogorszenie koncentracji"
+      },
+      {
+       "option": "C",
+       "content": "niekorzystnie wpływa na narząd równowagi"
+      },
+      {
+       "option": "D",
+       "content": "wszystkie odpowiedzi są prawdiłowe"
+      }
+      ],
+      "correct": "D"
+     },
+     {
+     "id": 8,
+     "question": {
+      "image": "",
+      "content": "Najczęstszą przyczyną urazu kręgosłupa jest: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "wykonywanie lotów z napędem plecakowym"
+      },
+      {
+       "option": "B",
+       "content": "latanie w kominach termicznych"
+      },
+      {
+       "option": "C",
+       "content": "przeciągnięcie paralotni podczas podejścia do lądowania"
+      },
+      {
+       "option": "D",
+       "content": "lądowanie z założonymi uszami"
+      }
+      ],
+      "correct": "C"
+     },
+     {
+     "id": 9,
+     "question": {
+      "image": "",
+      "content": "Start na paralotni może być niebezpieczny gdy: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "występuje silny porywisty wiatr"
+      },
+      {
+       "option": "B",
+       "content": "przez startowisko przechodzą podmuchy termiczne"
+      },
+      {
+       "option": "C",
+       "content": "startowisko jest po stronie zawietrznej góry"
+      },
+      {
+       "option": "D",
+       "content": "wszystkie odpowiedzi są prawdiłowe"
+      }
+      ],
+      "correct": "D"
+     },
+     {
+     "id": 10,
+     "question": {
+      "image": "",
+      "content": "Udzielając pomocy pilotowi, który spadł na ziemię i doznał urazu: "
+     },
+     "answers": [
+      {
+       "option": "A",
+       "content": "jeżeli jest taka potrzeba staramy się przywrócić akcję i oddech"
+      },
+      {
+       "option": "B",
+       "content": "tamujemy miejsca krwotoku"
+      },
+      {
+       "option": "C",
+       "content": "wzywamy służby medyczne"
+      },
+      {
+       "option": "D",
+       "content": "wszystkie odpowiedzi są prawdiłowe"
+      }
+      ],
+      "correct": "D"
+     }
+    ]
+   }
+  ]
+    
