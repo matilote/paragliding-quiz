@@ -1,0 +1,12 @@
+
+  {
+    foreach ($categories as $key => $value) {
+      <a href="highscores.html">
+        <div class="box-part text-center" id="rank">
+          <div class="title">
+            <h5><a href="/?page=quiz&cat=${key}">${value}</a></h5>
+          </div>
+        </div>
+      </a>
+    }
+  }

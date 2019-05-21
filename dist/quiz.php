@@ -18,7 +18,7 @@
     <?php
       $category = 'human';
       $id = 1;
-      $url = "http://localhost/paragliding-quiz/api/category.php?quiz=$category&id=$id";
+      $url = "http://localhost:81/paragliding-quiz/api/api.php?quiz=$category&id=$id";
     
       $curl = curl_init($url);
       curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
