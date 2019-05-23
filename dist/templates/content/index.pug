@@ -1,5 +1,37 @@
-extend layout
+extends layout
+
+mixin list($name)
+  a(href="quiz.php")
+    div(class="box-part text-center")
+      div(class="title")
+        h5 = $name
 
 block content
-  strona index
-  title ${title}
+  div(class="container")
+    section(class="categories")
+      div(class="row")
+        - $myClasses = ["col-lg-12", "col-md-12", "col-sm-12", "col-xs-12"]
+        div(class=$myClasses)
+          div(class="head")
+            h1 Przygotuj się do egzaminu na Paralotniarza
+              img(src="https://img.icons8.com/metro/26/000000/paragliding.png" alt="")
+        div(class="divider")
+        div(class="category-head")
+          h2 Kategorie pytań
+        - $myClasses2 = ["col-lg-6", "col-md-6", "col-sm-12", "col-xs-12"]
+        - $values = [
+          "human" => "Człowiek, Możliwości, Ograniczenia",
+          "meteo" => "Meteo",
+          "nav" => "Nawigacja",
+          "law" => "Prawo Lotnicze",
+          "rules" => "Zasady Lotu",
+          "safety" => "Bezpieczeństwo Lotów",
+          "planning" => "Osiągi i Planowanie Lotu",
+          "procedures" => "Procedury Operacyjne",
+          "transport" => "Transport, Konserwacja i Obsługa Statku Powietrznego",
+          "knowledge" => "Wiedza Ogólna o Statku Powietrznym"
+        ]
+        each $val, $index in $values
+          +list($index)
+      footer Liczba unikalnych wizyt:
+        span(id="count") 123111

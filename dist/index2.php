@@ -11,7 +11,7 @@
 
   $t_router = router($_GET);
 
-//   print_r($t_router)
+  print_r($t_router);
   
   /*
   $output = $pug->render($t_router[0], $t_router[1]);

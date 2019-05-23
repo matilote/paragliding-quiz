@@ -65,3 +65,22 @@
 [Tue May 21 22:20:49.708826 2019] [php7:notice] [pid 15137] [client 127.0.0.1:35068] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
 [Tue May 21 22:21:11.706968 2019] [php7:notice] [pid 1802] [client 127.0.0.1:35078] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
 [Tue May 21 22:21:11.706993 2019] [php7:notice] [pid 1802] [client 127.0.0.1:35078] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Wed May 22 20:31:35.014288 2019] [php7:error] [pid 1803] [client ::1:44500] PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /home/matilote/REPO/paragliding-quiz/dist/quiz.php:23\nStack trace:\n#0 {main}\n  thrown in /home/matilote/REPO/paragliding-quiz/dist/quiz.php on line 23, referer: http://localhost:81/quiz.html
+[Thu May 23 19:25:10.662236 2019] [php7:notice] [pid 1801] [client 127.0.0.1:40802] PHP Notice:  Undefined index: page in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 74
+[Thu May 23 19:25:10.662264 2019] [php7:notice] [pid 1801] [client 127.0.0.1:40802] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:25:10.662270 2019] [php7:notice] [pid 1801] [client 127.0.0.1:40802] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Thu May 23 19:25:20.490256 2019] [php7:notice] [pid 1802] [client 127.0.0.1:40804] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:25:20.490303 2019] [php7:notice] [pid 1802] [client 127.0.0.1:40804] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Thu May 23 19:25:27.082110 2019] [php7:notice] [pid 16760] [client 127.0.0.1:40808] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:25:27.082143 2019] [php7:notice] [pid 16760] [client 127.0.0.1:40808] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Thu May 23 19:27:17.779462 2019] [php7:notice] [pid 27926] [client 127.0.0.1:40856] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:27:17.779497 2019] [php7:notice] [pid 27926] [client 127.0.0.1:40856] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Thu May 23 19:27:25.815815 2019] [php7:notice] [pid 27928] [client 127.0.0.1:40860] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:27:25.815853 2019] [php7:notice] [pid 27928] [client 127.0.0.1:40860] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Thu May 23 19:28:11.815471 2019] [php7:notice] [pid 27926] [client 127.0.0.1:40876] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:28:11.815495 2019] [php7:notice] [pid 27926] [client 127.0.0.1:40876] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Thu May 23 19:28:24.059625 2019] [php7:notice] [pid 27925] [client 127.0.0.1:40890] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:28:24.059671 2019] [php7:notice] [pid 27925] [client 127.0.0.1:40890] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
+[Thu May 23 19:28:30.460173 2019] [php7:notice] [pid 27928] [client 127.0.0.1:40894] PHP Notice:  Undefined index: page in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 74
+[Thu May 23 19:28:30.460202 2019] [php7:notice] [pid 27928] [client 127.0.0.1:40894] PHP Notice:  Undefined index: cat in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 46
+[Thu May 23 19:28:30.460206 2019] [php7:notice] [pid 27928] [client 127.0.0.1:40894] PHP Notice:  Undefined index: question in /home/matilote/REPO/paragliding-quiz/dist/core/router.php on line 48
