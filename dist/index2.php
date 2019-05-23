@@ -11,6 +11,6 @@
 
   $t_router = router($_GET);
   
-  echo $pug->render($t_router[0], $t_router[1]);
+  echo $pug->render('templates/content/' . $t_router[0] . '.pug', $t_router[1]);
 
 ?>

@@ -1,4 +1,4 @@
-extends layout
+extends ../layout
 
 mixin list($name)
   a(href="quiz.php")
@@ -16,9 +16,10 @@ block content
             h1 = headTitle
               img(src="https://img.icons8.com/metro/26/000000/paragliding.png" alt="")
         div(class="divider")
-        div(class="category-head")
-          h2 = categoryTitle
-        - $myClasses2 = ["col-lg-6", "col-md-6", "col-sm-12", "col-xs-12"]
+      div(class="category-head")
+        h2 = categoryTitle
+        - $myClasses2 = ["col-lg-12", "col-md-12", "col-sm-12", "col-xs-12"]
+        - $safety = 'safety'
         div(class=$myClasses2)
           each $val, $index in categories
             +list($val)
