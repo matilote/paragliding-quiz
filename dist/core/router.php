@@ -24,12 +24,17 @@
 
   function getIndexVariables() {
     return [
-      'title' => 'To jest index'
+      'headTitle' => 'Przygotuj się do egzaminu na Paralotniarza',
+      'categoryTitle' => 'Kategorie pytań'
     ];
   };
 
   function getQuizVariables() {
-    return [];
+    require('data.php');
+    $questions = get_questions($quiz, $id);
+    return [
+      'questions' => $questions // ?
+    ];
   };
 
   function getResultsVariables() {
@@ -63,7 +68,7 @@
 
     $global = getGlobalVariables();
 
-    return $global + $local; // Jak łączyc tablice w PHP (merge)
+    return $global + $local;
   };
 
 

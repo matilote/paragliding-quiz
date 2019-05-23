@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  div(class="container" id="greeter")
+    div
+      h1(id="finalScore")
+    div(class="input-group mb-3" style="width: 50%;")
+      input(
+        type="text"
+        class="form-control"
+        placeholder="Nazwa użytkownika"
+        id="username"
+      )
+      div(class="input-group-append")
+        button(
+          class="btn btn-outline-secondary"
+          type="button"
+          id="saveResult"
+          onclick="saveHighScore(event)"
+          disabled
+        ) Zapisz wynik
+    div(class="btn")
+      a(href="quiz.html")
+        button(
+          type="button"
+          class="btn btn-outline-secondary"
+        ) Strona główna
