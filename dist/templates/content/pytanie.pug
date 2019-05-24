@@ -8,8 +8,11 @@ mixin choiceContainer($option, $content, $dataNumber)
 block content
   div(class="container")
     div(id="quiz" class="justify-center flex-column")
-      h2(id="question") = $question
-      +choiceContainer($option, $content, $dataNumber)
+      h2(id="question") = questions['question']['content']
+      +choiceContainer(questions['answers'][0]['option'], questions['answers'][0]['content'], 1)
+      +choiceContainer(questions['answers'][1]['option'], questions['answers'][1]['content'], 2)
+      +choiceContainer(questions['answers'][2]['option'], questions['answers'][2]['content'], 3)
+      +choiceContainer(questions['answers'][3]['option'], questions['answers'][3]['content'], 4)
       div(class="progress-container")
       h2 Question
       div(

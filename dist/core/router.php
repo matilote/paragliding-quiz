@@ -31,10 +31,8 @@
 
   function getQuizVariables() {
     require('data.php');
-    $questions = get_questions($quiz, $id);
-    return [
-      'questions' => $questions // ?
-    ];
+    $questions = get_questions("human", 1);
+    return ['questions' => (array) $questions];
   };
 
   function getResultsVariables() {

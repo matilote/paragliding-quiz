@@ -18,9 +18,8 @@ block content
         div(class="divider")
       div(class="category-head")
         h2 = categoryTitle
-        - $myClasses2 = ["col-lg-12", "col-md-12", "col-sm-12", "col-xs-12"]
         - $safety = 'safety'
-        div(class=$myClasses2)
+        div(class=$myClasses)
           each $val, $index in categories
             +list($val)
       footer Liczba unikalnych wizyt:

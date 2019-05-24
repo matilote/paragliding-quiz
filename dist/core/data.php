@@ -2,8 +2,8 @@
 
 function get_questions($quiz, $id)
 {
-	$url = '../data/human.json';
-	$data = file_get_contents($url);
+  $url = '/../data/human.json';
+	$data = file_get_contents(__DIR__ . $url);
 	$quizArray = json_decode($data);
 	$item = NULL;
 	
