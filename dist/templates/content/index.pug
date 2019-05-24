@@ -1,7 +1,7 @@
 extends ../layout
 
-mixin list($name)
-  a(href="quiz.php")
+mixin list($name, $index)
+  a(href="/index2.php?page=pytanie&cat=".$index."&question=1")
     div(class="box-part text-center")
       div(class="title")
         h5 = $name
@@ -21,6 +21,6 @@ block content
         - $safety = 'safety'
         div(class=$myClasses)
           each $val, $index in categories
-            +list($val)
+            +list($val, $index)
       footer Liczba unikalnych wizyt:
         span(id="count") 123111

@@ -29,9 +29,9 @@
     ];
   };
 
-  function getQuizVariables() {
+  function getQuizVariables($category, $question) {
     require('data.php');
-    $questions = get_questions("human", 1);
+    $questions = get_questions($category, $question);
     return ['questions' => (array) $questions];
   };
 
@@ -55,7 +55,7 @@
         $local = getIndexVariables();
         break;
       case 'pytanie':
-        $local = getQuizVariables();
+        $local = getQuizVariables($category, $question);
         break;
       case 'wynik':
         $local = getResultsVariables();

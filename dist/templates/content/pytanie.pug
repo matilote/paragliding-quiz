@@ -1,5 +1,9 @@
 extends ../layout
 
+block links
+  link(rel="stylesheet" href="./css/quiz.css")
+
+
 mixin choiceContainer($option, $content, $dataNumber)
   div(class="choice-container")
     p(class="prefix") = $option
