@@ -1,7 +1,8 @@
 <?php
 
-  function getTemplate($page) {
+  require('data.php');
 
+  function getTemplate($page, $DIR) {
     $routes = ['index', 'pytanie', 'wynik'];
 
     if (!isset($page)) {
@@ -12,7 +13,7 @@
       return $page;
     };
 
-    return '404';
+    return 'error';
   };
 
   function getGlobalVariables() {
@@ -29,10 +30,11 @@
     ];
   };
 
-  function getQuizVariables($category, $question) {
-    require('data.php');
-    $questions = get_questions($category, $question);
-    return ['questions' => (array) $questions];
+  function getQuestionVariables($category, $questionId, $DIR) {
+    $t_question = getQuestion($category, $questionId, $DIR);
+    return [
+      'question' => $t_question
+    ];
   };
 
   function getResultsVariables() {
@@ -44,7 +46,7 @@
   };
 
 
-  function getVariables($template, $params = []) {
+  function getVariables($template, $params = [], $DIR) {
 
     $category = $_GET['cat'];
     
@@ -55,7 +57,10 @@
         $local = getIndexVariables();
         break;
       case 'pytanie':
-        $local = getQuizVariables($category, $question);
+        $local = getQuestionVariables($category, $question, $DIR);
+        /*if (!isset($local['question'])) {
+          // header("Location: /index2.php?page=error&e=missingCategory");
+        }*/
         break;
       case 'wynik':
         $local = getResultsVariables();
@@ -70,13 +75,13 @@
   };
 
 
-  function router($params = []) {
+  function router($params = [], $DIR) {
     
     $t_router = [];
   
-    $t_router[0] = getTemplate($_GET['page']);
+    $t_router[0] = getTemplate($_GET['page'], $DIR);
 
-    $t_router[1] = getVariables($t_router[0], $params);
+    $t_router[1] = getVariables($t_router[0], $params, $DIR);
 
     return $t_router;
   };

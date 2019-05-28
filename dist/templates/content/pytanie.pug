@@ -3,29 +3,36 @@ extends ../layout
 block links
   link(rel="stylesheet" href="./css/quiz.css")
 
+block scripts
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
 
-mixin choiceContainer($option, $content, $dataNumber)
-  div(class="choice-container")
-    p(class="prefix") = $option
+mixin choiceContainer($index, $dataNumber)
+  - $answer = question['answers'][$index]['option']
+  - $content = question['answers'][$index]['content']
+  button(class="choice-container" name="choice-submit" type="submit")
+    p(class="prefix") = $answer
     p(class="question-text" data-number=$dataNumber) = $content
 
 block content
   div(class="container")
-    div(id="quiz" class="justify-center flex-column")
-      h2(id="question") = questions['question']['content']
-      +choiceContainer(questions['answers'][0]['option'], questions['answers'][0]['content'], 1)
-      +choiceContainer(questions['answers'][1]['option'], questions['answers'][1]['content'], 2)
-      +choiceContainer(questions['answers'][2]['option'], questions['answers'][2]['content'], 3)
-      +choiceContainer(questions['answers'][3]['option'], questions['answers'][3]['content'], 4)
-      div(class="progress-container")
-      h2 Question
-      div(
-        class="progress" 
-        style="height: 3rem; border-radius: 1rem;"
-      )
-      div(
-        class="progress-bar" 
-        id="progress-bar" 
-        role="progressbar" 
-        style="width: 33.3%; font-size: 1.5rem; background-color: rgb(199, 90, 90);"
-      )
+    form(action="../../script/question.php" method="post")
+      div(id="quiz" class="justify-center flex-column")
+        - $questionTitle = question['question']['content']
+        h2(id="question") = $questionTitle
+        +choiceContainer(0, 0, 1)
+        +choiceContainer(1, 1, 2)
+        +choiceContainer(2, 2, 3)
+        +choiceContainer(3, 3, 4)
+        div(class="progress-container")
+          h2 Quiz progress
+          div(
+            class="progress" 
+            style="height: 3rem; border-radius: 1rem;"
+          )
+          div(
+            class="progress-bar" 
+            id="progress-bar" 
+            role="progressbar" 
+            style="width: 10%; font-size: 1.5rem; background-color: rgb(199, 90, 90);"
+          )
+

@@ -1,24 +1,25 @@
 <?php
 
-function get_questions($quiz, $id)
+function getQuestion($category, $questionId, $DIR)
 {
-  $url = '/../data/human.json';
-	$data = file_get_contents(__DIR__ . $url);
-	$quizArray = json_decode($data);
-	$item = NULL;
-	
-	foreach ($quizArray as $key=>$content) {
-		if($key == $quiz && $quiz == $content->quiz)
-		{
-			$obj = $content->questions;
-			if($id == $obj[$id - 1]->id) {
-				$item = $obj;
-				return $item[$id - 1];
-				break;
-			}
-			break;
-		} else {
-			print('ERROR');
-		}
-	}
+	$path = $DIR . getCategoryDataFile($category);
+	if ($path) {
+		$data = file_get_contents($path);
+		$t_category = json_decode($data, true);
+    $question = $t_category['questions'][$questionId - 1];
+		return $question;
+	} else {
+		return null;
+	};
+}
+
+
+function getCategoryDataFile($category) {
+	switch ($category) {
+		case "human":
+			$path = 'data/' . $category . ".json";
+			return $path;
+		default:
+			return null;
+	};
 }
